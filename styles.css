@@ -21,4 +21,16 @@ body{
     height: 600px;
     background-color: lightgrey;
     border-radius: 20px;
+    padding: 30px;
+}
+
+.screen {
+    height: 100px;
+    width: 340px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.buttons {
+    display: flex;
 }

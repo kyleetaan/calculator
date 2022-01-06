@@ -25,12 +25,21 @@ body{
 }
 
 .screen {
-    height: 100px;
+    height: 160px;
     width: 340px;
     background-color: white;
     border-radius: 10px;
 }
 
 .buttons {
+    margin-top: 30px;
     display: flex;
+    flex-wrap: wrap;
+    width: 340px;
+    gap: 4px;
+}
+
+.buttons button {
+    width: 82px;
+    height: 70px;
 }

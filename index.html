@@ -12,27 +12,28 @@
     <div class="main">
         <div class="calculator">
             <div class="screen">
-                <div class="calculationScreen"></div>
-                <div class="inputScreen"></div>
+                <div id="calculationScreen"></div>
+                <div id="inputScreen">0</div>
             </div>
             <div class="buttons">
-                <button id="clearBtn">CLEAR</button>
+                <button id="clearBtn" onclick="clearScreen()">CLEAR</button>
                 <button id="deleteBtn">DELETE</button>
-                <button id="one">1</button>
-                <button id="two">2</button>
-                <button id="three">3</button>
-                <button id="four">4</button>
-                <button id="five">5</button>
-                <button id="six">6</button>
-                <button id="seven">7</button>
-                <button id="eight">8</button>
-                <button id="nine">9</button>
-                <button id="zero">0</button>
-                <button id="plus">+</button>
-                <button id="subtract">-</button>
-                <button id="divide">/</button>
-                <button id="multiply">*</button>
+                <button id="one" onclick="input(1)">1</button>
+                <button id="two" onclick="input(2)">2</button>
+                <button id="three" onclick="input(3)">3</button>
+                <button id="multiply" class="operator">*</button>
+                <button id="four" onclick="input(4)">4</button>
+                <button id="five" onclick="input(5)">5</button>
+                <button id="six" onclick="input(6)">6</button>
+                <button id="divide" class="operator">/</button>
+                <button id="seven" onclick="input(7)">7</button>
+                <button id="eight" onclick="input(8)">8</button>
+                <button id="nine" onclick="input(9)">9</button>
+                <button id="subtract" class="operator">-</button>
+                <button id="decimal">.</button>
+                <button id="zero" onclick="input(0)">0</button>
                 <button id="equals">=</button>
+                <button id="plus" class="operator">+</button>
             </div>
         </div>
     </div>

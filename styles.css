@@ -11,14 +11,14 @@ body{
 
 .main {
     display: flex;
-    margin: 150px 0px;
+    margin: 140px 0px;
     justify-content: center;
     align-items: center;
 }
 
 .calculator{
     width: 400px;
-    height: 600px;
+    height: 610px;
     background-color: lightgrey;
     border-radius: 20px;
     padding: 30px;
@@ -33,13 +33,33 @@ body{
 
 .buttons {
     margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    width: 340px;
-    gap: 4px;
+    display: grid;
+    grid-template-columns: repeat(4,82px);
+    grid-template-rows: repeat(5,70px);
+    grid-gap: 4px;
 }
 
-.buttons button {
-    width: 82px;
-    height: 70px;
+
+#clearBtn {
+    grid-column: 1 / 3;
+    background-color: rgb(235, 119, 119);
+    border-radius: 80px;
+}
+
+#deleteBtn {
+    grid-column: 3/-1;
+    background-color: lightblue;
+    border-radius: 80px;
+}
+
+#calculationScreen {
+    height: 60%;
+    font-size: 30px;
+    text-align: right;
+}
+
+#inputScreen {
+    height: 40%;
+    font-size: 20px;
+    text-align: right;
 }

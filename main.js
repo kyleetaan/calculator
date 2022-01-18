@@ -54,10 +54,16 @@ function clearScreen(){
     
     inputScreen.textContent = "0";
     calculation.textContent = "";
+    currentOperator = "";
+    currentNumber = "";
+    nextNumber = "";
+    result = "";
 }
 
 function operate(){
-    nextNumber = Number(inputScreen.textContent);
+    let temp = Number(inputScreen.textContent);
+    nextNumber = currentNumber;
+    currentNumber = temp;
     
     switch(currentOperator){
         case "+":
@@ -81,6 +87,6 @@ function operate(){
 
 function changeScreen(result){
     calculation.textContent = "";
-    calculation.textContent = `${currentNumber} ${currentOperator} ${inputScreen.textContent}`;
+    calculation.textContent = `${nextNumber} ${currentOperator} ${inputScreen.textContent}`;
     inputScreen.textContent = result;
 }

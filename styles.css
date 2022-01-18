@@ -56,10 +56,12 @@ body{
     height: 60%;
     font-size: 30px;
     text-align: right;
+    padding: 10px;
 }
 
 #inputScreen {
     height: 40%;
     font-size: 20px;
     text-align: right;
+    padding: 10px;
 }
